@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Register Missing Slice</title>
+    <link rel="stylesheet" href="../css/styling.css">
+    <script src="../javascript/register.js" defer></script>
+    <script src="../javascript/index.js" defer></script>
+</head>
+
+<body>
+    <div class="account-info">
+        <img src="../logo.png" alt="Missing Slice Logo">
+        <p id="accountMessage">Playing as Guest</p>
+    </div>
+
+    <!-- Registration form -->
+    <section class="login-section">
+        <h1>🍕 Missing Slice</h1>
+        <h2>Create Your Detective Account</h2>
+        <form id="registerForm">
+            <!-- Email input -->
+            <label for="registerEmail">Email:</label>
+            <input type="text" id="registerEmail" placeholder="Enter your email" >
+            <!-- Password input -->
+            <label for="registerPassword">Create Password:</label>
+            <input type="password" id="registerPassword" placeholder="Create a strong password">
+<!-- Confirm password -->
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" placeholder="Enter your password again"
+            >
+            <!-- Password requirements -->
+            <p id="passwordRules"> Your password must contain:
+                <br>At least 6 characters
+                <br>One uppercase letter
+                <br>One lowercase letter
+                <br>One number
+            </p>
+<!-- JavaScript feedback -->
+            <p id="registerMessage"></p>
+            <button>CREATE ACCOUNT</button>
+
+        </form>
+
+        <p class="explanation">If your already a detective!!</p>
+        <a href="login.html">
+            <button>Log in here</button>
+        </a>
+
+        <p>Back to main menu</p>
+        <a href="index.html">
+            <button>Back to the menu</button>
+        </a>
+
+    </section>
+
+</body>
+</html>

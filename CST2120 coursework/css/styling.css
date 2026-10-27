@@ -1,0 +1,263 @@
+body {
+    background-image:url("../pizza.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    font-family:sans-serif;
+    margin: 0; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+h1 {
+    font-size:65px;
+    color:#500303;
+    margin: 0 0 20px 0;
+    text-transform: uppercase; 
+    letter-spacing: 4px;
+}
+h2 {
+    font-size: 24px;
+    color:#3e1515;
+    margin: 0 0 20px 0;
+}
+.explanation {
+    color: #6e260a;
+    font-size:19px;
+    line-height:1.7;
+    max-width: 500px;
+    margin:0 20px 30px 20px;
+}
+.warning{
+    color: #611810;
+    font-size: 16px;
+    margin: 30px 0 0 0;
+   
+
+}
+ol,ul {
+    text-align: left;
+}
+button{
+    font-size :15px;
+    font-weight:bold;
+    width: 200px;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color:#ab4151;
+    cursor: pointer;
+    display:inline-block;
+    
+}
+button:hover{
+    background-color:#611e29;
+}
+.login-section{
+    width: 85%;
+    max-width: 500px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px rgba(0,0,0);
+    padding: 30px;
+    margin: 20px auto;
+    background-color: #f0ddcf;
+}
+.login-section label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    color: #481616;
+}
+.login-section input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #b8a29a;
+    border-radius: 6px;
+}
+/* Feedback messages */
+#message,
+#registerMessage,
+#resetMessage {
+    font-weight: bold;
+}
+#passwordRules {
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Logo and account info*/
+.account-info {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    background-color: rgba(236, 192, 180, 0.95);
+    border: 2px solid #9b0d0d;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgb(0, 0, 0);
+}
+.account-info img {
+    width: 60px;
+    height: 60px;
+    padding: 4px;
+    box-sizing: border-box;
+    border: 2px solid #ae0f0f;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.account-info img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0px 16px rgba(141, 3, 3, 0.8);
+}
+#accountMessage {
+    color: #500303;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+
+/* Game page */
+.game-page {
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+
+.game-section {
+    width: 90%;
+    max-width: 1000px;
+    box-sizing: border-box;
+    padding: 25px;
+    margin: 20px auto;
+    background-color: rgba(240, 221, 207, 0.96);
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+#lives {
+    font-size: 35;
+   margin-bottom: 5;
+}
+
+#score {
+    color: #500303;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.suspect-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.suspect-card {
+    padding: 18px;
+    background-color: #fff8f0;
+    border: 2px solid #ab4151;
+    border-radius: 10px;
+}
+
+.suspect-card h3 {
+    color: #500303;
+}
+
+.clue-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 10;
+}
+
+.game-section button {
+    margin: 5px;
+}
+
+#gameMessage {
+    color: #500303;
+    font-weight: bold;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.game-section button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    .suspect-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .game-section {
+        padding: 15px;
+    }
+
+    .game-page h1 {
+        font-size: 38px;
+    }
+}
+
+/* Ranking table */
+.login-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background-color: rgba(255, 248, 240, 0.95);
+    border-radius: 10px;
+    overflow: hidden;
+    color: #3e1515;
+}
+
+.login-section th {
+    background-color: #791414;
+    color: white;
+    padding: 15px 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+.login-section td {
+    padding: 14px 10px;
+    text-align: center;
+    border-bottom: 1px solid #e6c9bd;
+    font-size: 16px;
+}
+
+
+.login-section tbody tr:hover {
+    background-color: rgba(229, 151, 130, 0.75);
+}
+
+/* Ranking page message */
+#rankingMessage {
+    color: #6e260a;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+/* Make the ranking table fit smaller screens */
+@media (max-width: 480px) {
+    .login-section {
+        padding: 15px;
+    }
+
+    .login-section th,
+    .login-section td {
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+}
+        
+        
+        

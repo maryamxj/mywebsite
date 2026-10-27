@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Missing Slice - The Mystery</title>
+    <link rel="stylesheet" href="../css/styling.css">
+    <script src="../javascript/index.js" defer></script>
+    <script src="../javascript/game.js" defer></script>
+</head>
+
+<body class="game-page">
+
+    <!-- Logo and account information -->
+    <div class="account-info">
+        <img src="../logo.png" alt="Missing Slice Logo">
+        <p id="accountMessage">Playing as Guest</p>
+    </div>
+
+    <h1>THE MISSING SLICE</h1>
+    <h2 id="caseTitle">🕵️ Case #001: The Great Cheese Heist 🍕</h2>
+
+    <p class="explanation" id="caseExplanation">
+        One pizza. Four suspects. Absolutely zero trustworthy people.
+        Figure out who stole the last slice before the evidence gets cold.
+    </p>
+
+    <!-- Score and lives -->
+    <section class="game-section">
+        <p id="lives">❤️ ❤️ ❤️</p>
+        <p id="score">Score: 0</p>
+
+        <h2>Meet the suspects</h2>
+        <p>Click "Read statement" to hear their very questionable excuses.</p>
+
+        <div class="suspect-grid" id="suspectGrid"></div>
+
+        <h2>🔎 Investigate the clues</h2>
+        <p>Click each clue. Yes, even the suspicious cheese.</p>
+
+        <div class="clue-buttons" id="clueButtons"></div>
+        <p id="clueMessage">Your investigation starts here.</p>
+
+        <p id="gameMessage"></p>
+
+        <button id="restartButton" hidden>Play Again</button>
+        <a href="index.html">
+            <button type="button">Back to Menu</button>
+        </a>
+        <a href="ranking.html">
+            <button type="button">View Rankings</button>
+        </a>
+
+    </section>
+
+</body>
+</html>
